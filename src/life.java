@@ -16,7 +16,19 @@ public class life {
 	}
 		}
 		else if(name.equalsIgnoreCase("kaden")){
-			String password=JOptionPane.showInputDialog("");
+			String password=JOptionPane.showInputDialog("hi doggy 'pat pat'");
+			if(password.equalsIgnoreCase("dump trump")){
+				JOptionPane.showMessageDialog(null, "You are a VIP");
+			}
+				}
+		else if(name.equalsIgnoreCase("daniel")){
+			String password=JOptionPane.showInputDialog("You are a loser");
+			if(password.equalsIgnoreCase("dump trump")){
+				JOptionPane.showMessageDialog(null, "You are a VIP");
+			}
+				}
+		else if(name.equalsIgnoreCase("keith")){
+			String password=JOptionPane.showInputDialog("You are not family; the duck is.");
 			if(password.equalsIgnoreCase("dump trump")){
 				JOptionPane.showMessageDialog(null, "You are a VIP");
 			}

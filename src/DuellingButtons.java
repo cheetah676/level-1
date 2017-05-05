@@ -34,11 +34,11 @@ frame.setVisible(true);
 
 			// 5. Add an action listener to the leftButton
 leftButton.addActionListener((e)->{
-	JOptionPane.showMessageDialog(null, "You clicked");
+	JOptionPane.showMessageDialog(null, "Trump is a loser");
 });
 			// 6. Add an action listener to the rightButton
 rightButton.addActionListener((e)->{
-	JOptionPane.showMessageDialog(null, "You clicked");
+	JOptionPane.showMessageDialog(null, "Daniel is a loser");
 });
 			// 7. Add the leftButton to the panel
 panel.add(leftButton);
