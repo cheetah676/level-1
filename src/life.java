@@ -33,6 +33,26 @@ public class life {
 			if (password.equalsIgnoreCase("dump trump")) {
 				JOptionPane.showMessageDialog(null, "You are a VIP");
 			}
+		} else if (name.equalsIgnoreCase("wendy")) {
+			String password = JOptionPane.showInputDialog("Wendy is an unknown suspect...");
+			if (password.equalsIgnoreCase("dump trump")) {
+				JOptionPane.showMessageDialog(null, "You are a VIP");
+			}
+		} else if (name.equalsIgnoreCase("")) {
+			String password = JOptionPane.showInputDialog("");
+			if (password.equalsIgnoreCase("dump trump")) {
+				JOptionPane.showMessageDialog(null, "You are a VIP");
+			}
+		} else if (name.equalsIgnoreCase("")) {
+			String password = JOptionPane.showInputDialog("");
+			if (password.equalsIgnoreCase("dump trump")) {
+				JOptionPane.showMessageDialog(null, "You are a VIP");
+			}
+		} else if (name.equalsIgnoreCase("")) {
+			String password = JOptionPane.showInputDialog("");
+			if (password.equalsIgnoreCase("dump trump")) {
+				JOptionPane.showMessageDialog(null, "You are a VIP");
+			}
 		} else if (name.equalsIgnoreCase("")) {
 			String password = JOptionPane.showInputDialog("");
 			if (password.equalsIgnoreCase("dump trump")) {
