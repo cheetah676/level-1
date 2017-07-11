@@ -38,8 +38,11 @@ public class SimonSaysRecipe extends KeyAdapter {
     	// 16. make a points variable to track the score. tell the user their score at the end.
     	int points=0;
     	//17. if the keyCode matches the imageIndex and "Simon says..."  increase their score
-   
+   if(simonSays==0&& keyCode==imageIndex){
+	   points+=100;
+   }
     	//18.   if the keyCode doesn't match the imageIndex and "Simon didn't say..."  increase their score	
+   if(simonSays==1&&)
     	//19. Use the speak method to tell the user if they were correct or not
     	//13. increment tries by 1
   	tries++;
