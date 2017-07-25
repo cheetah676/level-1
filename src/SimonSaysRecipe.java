@@ -42,7 +42,7 @@ public class SimonSaysRecipe extends KeyAdapter {
 	   points+=100;
    }
     	//18.   if the keyCode doesn't match the imageIndex and "Simon didn't say..."  increase their score	
-   if(simonSays==1&&)
+   if(simonSays==1);
     	//19. Use the speak method to tell the user if they were correct or not
     	//13. increment tries by 1
   	tries++;
