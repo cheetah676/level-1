@@ -8,7 +8,9 @@
 /Human.class
 /LearningTextBoxes.class
 /LoserGuy.jpg
+/Movie.class
 /MyGui.class
+/NetflixQueue.class
 /PhotoQuiz.class
 /Robot.class
 /RobotArmy.class
@@ -18,7 +20,9 @@
 /SimonSaysRecipe.class
 /Smurf.class
 /SpaceShip.class
+/StuffArray.class
 /TheJokeApp.class
+/WierdThing.class
 /blahblahblah.class
 /down.png
 /figureground 2.gif
@@ -31,7 +35,5 @@
 /right.png
 /spaceShipRunner.class
 /up.png
-/StuffArray.class
-/Movie.class
-/NetflixQueue.class
-/WierdThing.class
+/BinaryConverter.class
+/PigLatinTranslator.class
