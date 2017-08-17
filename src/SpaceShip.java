@@ -6,7 +6,7 @@ SpaceShip(String pilotName, int startingFuel){
 	pilot=pilotName;
 	fuel=startingFuel;
 }
-refuel(int exFuel){
+//refuel(int exFuel){
 	
 }
-}
+

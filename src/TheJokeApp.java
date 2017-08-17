@@ -8,5 +8,8 @@ public static void main(String[]args){
 	JPanel panel=new JPanel();
 	frame.add(panel);
 	JButton button=new JButton();
+	panel.add(button);
+	frame.setVisible(true);
+	frame.pack();
 }
 }

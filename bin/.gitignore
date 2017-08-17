@@ -2,6 +2,7 @@
 /Bayleef.class
 /BayleefPet.class
 /BayleefRunner.class
+/BinaryConverter.class
 /BodyPartQuiz.class
 /BookOfIllusions.class
 /DuellingButtons.class
@@ -12,6 +13,7 @@
 /MyGui.class
 /NetflixQueue.class
 /PhotoQuiz.class
+/PigLatinTranslator.class
 /Robot.class
 /RobotArmy.class
 /Runner.class
@@ -35,5 +37,5 @@
 /right.png
 /spaceShipRunner.class
 /up.png
-/BinaryConverter.class
-/PigLatinTranslator.class
+/tweet.class
+/Tweet.class

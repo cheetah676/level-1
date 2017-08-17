@@ -25,6 +25,8 @@ import javax.swing.JPanel;
 
 		private void createUI() {
 			// 1. Add the panel to the frame
+			leftButton.setPreferredSize(SMALL);
+			rightButton.setPreferredSize(SMALL);
 frame.add(panel);
 			// 2. Make the frame visible
 frame.setVisible(true);
@@ -34,11 +36,19 @@ frame.setVisible(true);
 
 			// 5. Add an action listener to the leftButton
 leftButton.addActionListener((e)->{
-	JOptionPane.showMessageDialog(null, "Trump is a loser");
+	leftButton.setText("Click me!");
+	rightButton.setText("No, click me!");
+	rightButton.setPreferredSize(BIG);
+	leftButton.setPreferredSize(SMALL);
+	frame.pack();
 });
 			// 6. Add an action listener to the rightButton
 rightButton.addActionListener((e)->{
-	JOptionPane.showMessageDialog(null, "Daniel is a loser");
+	leftButton.setText("No, click me!");
+	rightButton.setText("Click me!");
+	rightButton.setPreferredSize(SMALL);
+	leftButton.setPreferredSize(BIG);
+	frame.pack();
 });
 			// 7. Add the leftButton to the panel
 panel.add(leftButton);
