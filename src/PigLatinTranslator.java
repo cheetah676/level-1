@@ -1,8 +1,12 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class PigLatinTranslator {
+public class PigLatinTranslator implements ActionListener {
 	JPanel panel=new JPanel();
 	JFrame frame=new JFrame();
 	JTextField answer = new JTextField(20);
@@ -15,7 +19,21 @@ public class PigLatinTranslator {
 	  private static boolean isLetter(char c) {
 	    return ( (c >='A' && c <='Z') || (c >='a' && c <='z') );
 	  }
-
+public static void main(String[]args) {
+	PigLatinTranslator P=new PigLatinTranslator(); 
+	P.start();
+}
+public void start(){
+	frame.add(panel);
+	JButton button=new JButton();
+	panel.add(binary);
+	panel.add(button);
+	panel.add(answer);
+	frame.setVisible(true);
+	button.setText("CONVERT!");
+	button.addActionListener(this);
+	frame.pack();	
+}
 	  /**
 	   * Method to translate one word into pig latin.
 	   * @param word The word in english
@@ -72,6 +90,18 @@ public class PigLatinTranslator {
 	        return i;
 	    return 0;
 	  }
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		String A;
+		A=binary.getText();
+		String B=translate(A);
+		answer.setText(B);
+	}
+	private String convert(String a) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }
 
