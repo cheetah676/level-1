@@ -1,11 +1,18 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.net.URI;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
-public class Tv {
+public class Tv implements ActionListener {
 public static void main(String[]args) {
+	Tv tv=new Tv();
+	tv.start();
+}
+public void start() {
 	JPanel panel=new JPanel();
 	JFrame frame=new JFrame();
 	frame.setVisible(true);
@@ -16,7 +23,16 @@ public static void main(String[]args) {
 	panel.add(button3);
 	panel.add(button2);
 	panel.add(button);
-frame.pack();
+	button.setText("Duck");
+	button2.setText("Frog");
+	button3.setText("Unicorn");
+	button.addActionListener(
+			(e)->{showDucks();});
+	button2.addActionListener(
+			(e)->{showFrog();});
+	button3.addActionListener(
+			(e)->{showFluffyUnicorns();});
+	frame.pack();
 }
 void showDucks() {
 	playVideo("Drirjl5K9Yk");
@@ -32,11 +48,16 @@ void showFluffyUnicorns() {
 
 void playVideo(String videoID) {
 	try {
-URI uri = new URI("https://www.youtube.com/v/" + videoID + "?autoplay=1");
+URI uri = new URI("https://www.youtube.com/watch?v=" + videoID);
 		java.awt.Desktop.getDesktop().browse(uri);
 	} catch (Exception e) {
 		e.printStackTrace();
 	}
+}
+@Override
+public void actionPerformed(ActionEvent e) {
+	// TODO Auto-generated method stub
+	
 }
 
 }
