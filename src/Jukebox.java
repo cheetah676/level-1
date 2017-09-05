@@ -2,16 +2,18 @@
 // Copyright The League of Amazing Programmers, 2015
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
-import javazoom.jl.decoder.JavaLayerException;
 import javazoom.jl.player.advanced.AdvancedPlayer;
 
 /* 1. Download the JavaZoom jar from here: http://bit.ly/javazoom
@@ -20,24 +22,41 @@ import javazoom.jl.player.advanced.AdvancedPlayer;
 public class Jukebox implements Runnable {
 
 	public static void main(String[] args) {
+
 		SwingUtilities.invokeLater(new Jukebox());
+
 	}
 
-           public void run() {
+	public void run() {
 
 		// 3. Find an mp3 on your computer or on the Internet.
+
 		// 4. Create a Song
-
+		Song song1 = new Song("/Users/league/Desktop/level-1/src/ding.mp3");
 		// 5. Play the Song
-
+		for(int i=1;i<50;i++) {
+		song1.play();	
+		}	
 		/*
-		 * 6. Create a user interface for your Jukebox so that the user can to
-		 * choose which song to play. You can use can use a different button for
-		 * each song, or a picture of the album cover. When the button or album
-		 * cover is clicked, stop the currently playing song, and play the one
-		 * that was selected.
+		 * 6. Create a user interface for your Jukebox so that the user can to choose
+		 * which song to play. You can use can use a different button for each song, or
+		 * a picture of the album cover. When the button or album cover is clicked, stop
+		 * the currently playing song, and play the one that was selected.
 		 */
-          }
+		JFrame frame=new JFrame();
+		JPanel panel=new JPanel();
+		frame.add(panel);		
+		JButton button1=new JButton();
+		button1.setText("1");
+		JButton button2=new JButton();
+		button2.setText("2");
+		panel.add(button1);
+		panel.add(button2);
+		frame.setVisible(true);
+		frame.pack();
+		
+	}
+
 	/* Use this method to add album covers to your Panel. */
 	private JLabel loadImage(String fileName) {
 		URL imageURL = getClass().getResource(fileName);
@@ -55,8 +74,7 @@ class Song {
 	private InputStream songStream;
 
 	/**
-	 * Songs can be constructed from files on your computer or Internet
-	 * addresses.
+	 * Songs can be constructed from files on your computer or Internet addresses.
 	 * 
 	 * Examples: <code> 
 	 * 		new Song("everywhere.mp3"); 	//from default package 
@@ -131,5 +149,4 @@ class Song {
 		}
 	}
 }
-
 
