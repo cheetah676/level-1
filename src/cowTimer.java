@@ -9,7 +9,7 @@
 		 * each instruction.
 		 * Work in seconds when testing, then change to minutes
 		 */
-int minutes1=2;
+int minutes1=5;
 		public static void main(String[] args) throws InterruptedException {
 			/* 1. Make a CowTimer, set the time and start it. */
 cowTimer cT=new cowTimer();
@@ -33,8 +33,25 @@ if (minutes1>0) {
 	System.out.println(minutes1);
 minutes1-=1;
 }
-Thread.sleep(600);
+Thread.sleep(15000);
 if(minutes1<=0) {
+	playSound("moo.wav");
+	Thread.sleep(500);
+	playSound("moo.wav");
+	Thread.sleep(500);
+	playSound("moo.wav");
+	Thread.sleep(500);
+	playSound("moo.wav");
+	Thread.sleep(500);
+	playSound("moo.wav");
+	Thread.sleep(500);
+	playSound("moo.wav");
+	Thread.sleep(500);
+	playSound("moo.wav");
+	Thread.sleep(500);
+	playSound("moo.wav");
+	Thread.sleep(500);
+	playSound("moo.wav");
 	playSound("moo.wav");
 	Thread.sleep(500);
 	playSound("moo.wav");

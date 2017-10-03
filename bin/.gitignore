@@ -8,6 +8,7 @@
 /BookOfIllusions.class
 /DuellingButtons.class
 /GetTheLatestTweet.class
+/Houses.class
 /Human.class
 /Jukebox.class
 /LearningTextBoxes.class
@@ -38,6 +39,7 @@
 /Tweet.class
 /WierdThing.class
 /blahblahblah.class
+/cowTimer.class
 /ding.mp3
 /down.png
 /figureground 2.gif
@@ -46,12 +48,10 @@
 /hqdefault 2.jpg
 /left.jpg
 /life.class
+/moo.wav
 /petPlatypus.class
 /right.png
 /spaceShipRunner.class
 /up.png
-/cowTimer.class
-/moo/
-/moo.htm
-/moo.wav
-/Houses.class
+/athlete.class
+/Athlete.class
