@@ -9,7 +9,7 @@
 		 * each instruction.
 		 * Work in seconds when testing, then change to minutes
 		 */
-int minutes1=5;
+int minutes1=6;
 		public static void main(String[] args) throws InterruptedException {
 			/* 1. Make a CowTimer, set the time and start it. */
 cowTimer cT=new cowTimer();

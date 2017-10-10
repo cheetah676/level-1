@@ -20,6 +20,11 @@ public static void main(String[]args) {
 	System.out.println("Hi, my name is "+Bob.getName()+" and my bib number is "+Bob.getBibNum());
 	System.out.println("Hi, my name is "+Joe.getName()+" and my bib number is "+Joe.getBibNum());
 	System.out.println("Hi, my name is "+Bayleef.getName()+" and my bib number is "+Bayleef.getBibNum());
+	location="somewhere";
+	System.out.println("My name is "+Bob.getName()+" and I am racing in "+location);
+	Joe.location="in Dexter's mouth";
+	System.out.println("My name is "+Bob.getName()+" and I am racing in "+Bob.location);
+	System.out.println("My name is "+Joe.getName()+" and I am racing in "+Joe.location);
 }
 String getName(){
 	return name;
