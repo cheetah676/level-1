@@ -10,6 +10,7 @@ import javax.swing.JLabel;
 public class AnimalJumping {
 	 public static void main(String[] args) throws MalformedURLException {
 JFrame frame=new JFrame();
+
 	        /* We want to show an animation of an animal sucking at jumping inside a JFrame.
 	         * Once you have chosen from http://animalssuckingatjumping.tumblr.com/, right click and "Copy Image URL" or “Copy Image Address”
 	         * Your program must:
@@ -18,8 +19,13 @@ JFrame frame=new JFrame();
 	         * 		- have a title such as "Gerbil Fail"
 	         */
 
-		 	String urlOfAnimalSuckingAtJumping = "";
-	       
+		 	String urlOfAnimalSuckingAtJumping = "http://78.media.tumblr.com/312ea8b1f65093fc7326ddcb3d05ad0a/tumblr_inline_n3i3i59cdt1qz7g1h.gif";
+		 	JLabel label=createImage(urlOfAnimalSuckingAtJumping);
+		 	frame.add(label);
+		 	frame.setTitle("SUPER DOGGY");
+		 	frame.setLocationRelativeTo(null);
+		 	frame.setVisible(true);
+		 	frame.pack();
 	    }
 	 
 	 static JLabel createImage(String imageURL) throws MalformedURLException {

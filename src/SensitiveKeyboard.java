@@ -24,7 +24,7 @@ frame.addKeyListener(this);
 @Override
 public void keyTyped(KeyEvent e) {
 	// TODO Auto-generated method stub
-	String pain="The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues.";
+	String pain="Dexter is a meany!";
 	speak(pain);
 }
 @Override
