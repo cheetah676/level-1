@@ -14,8 +14,10 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 public class Spamalot implements ActionListener {
-static final String FAKE_USERNAME = "bayleef999@gmail.com";
-static final String FAKE_PASSWORD = "whyisthe";
+//static final String FAKE_USERNAME = "bayleef999@gmail.com";
+//static final String FAKE_PASSWORD = "whyisthe";
+static final String FAKE_USERNAME = "bobthecodeman@gmail.com";
+static final String FAKE_PASSWORD = "weakpassword";
 JFrame frame = new JFrame();
 JPanel panel = new JPanel();
 JTextField text = new JTextField("Email Adress");
@@ -74,10 +76,12 @@ JButton button2 = new JButton();
 		String email;
 		email=text.getText();
 		String good="Hi this is a spam";
-		String bad="You are a bad president";
+		String bad="You are a loser";
 		JButton buttonPressed=(JButton)e.getSource();
 		if(buttonPressed==button1) {
+			for (int i = 0; i < 50; i++) {
 			sendSpam(email, "Bad", bad );
+			}
 		}
 		else {
 			sendSpam(email, "Good", good);
