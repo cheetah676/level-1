@@ -1,5 +1,6 @@
 import javax.swing.JFrame;
 import org.teachingextensions.logo.MultiTurtlePanel;
+import org.teachingextensions.logo.Tortoise;
 import org.teachingextensions.logo.Turtle;
 
 public class LandOfTurtles {
@@ -11,15 +12,19 @@ public class LandOfTurtles {
 JFrame frame=new JFrame();
 frame.setVisible(true);
 		// 2. Add the panel to the frame
-		
+		frame.add(panel);
 		// 3. Set the background image of the panel to the Galapagos Islands 
-
+panel.setBackgroundImage(galapagosIslands);
 		// 4. Instantiate a Turtle 
-
 // 5. Add the turtle to the panel 
-		
 		// 6. Put 50 Turtles on the beach
-
+		for (int i = 0; i < 500; i+=10) {
+			Turtle turd=new Turtle();
+			panel.addTurtle(turd);
+			turd.setX(i);
+			turd.setY(i);
+		}
+		frame.pack();
 	}
 }
 
