@@ -24,7 +24,7 @@ frame.addKeyListener(this);
 @Override
 public void keyTyped(KeyEvent e) {
 	// TODO Auto-generated method stub
-	String pain="Dexter is a meany!";
+	String pain="Have you seen my lemons?  I wann my lemons!";
 	speak(pain);
 }
 @Override
