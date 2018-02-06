@@ -1,11 +1,5 @@
-// Copyright Wintriss Technical Schools 2013
-public class MakeStupidTea {
 
-	/* Figure out how to make a cup of tea using the classes below */
-
-}
-
-class TeaBag {
+public class TeaBag {
 
 	public final static String GREEN = "Green";
 	public final static String MINT = "Mint";
@@ -22,14 +16,14 @@ class TeaBag {
 		return flavor;
 	}
 
-public static void main(String[]args) {
-	TeaBag bag=new TeaBag(PASSION_FRUIT);
-	Kettle kettle=new Kettle();
-	kettle.boil();
-	Cup cup=new Cup();
-	
-	makeTea("bag")
-}
+	public static void main(String[] args) {
+		TeaBag bag = new TeaBag(PASSION_FRUIT);
+		Kettle kettle = new Kettle();
+		kettle.boil();
+		kettle.getWater();
+		Cup cup = new Cup();
+		cup.makeTea(bag, kettle.getWater());
+	}
 }
 
 class Kettle {
