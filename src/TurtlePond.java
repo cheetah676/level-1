@@ -84,7 +84,7 @@ public class TurtlePond implements KeyEventDispatcher {
 		double y2 = tortoiseLocationY - cookieY;
 		double number2 = x2 * x2 + y2 * y2;
 		double distance2 = Math.sqrt(number);
-		if (distance <= 20) {
+		if (distance2 <= 20) {
 			setBackgroundColor(Color.red);
 		}
 
@@ -94,15 +94,29 @@ public class TurtlePond implements KeyEventDispatcher {
 		double y3 = tortoiseLocationY - cookieY;
 		double number3 = x3 * x3 + y3 * y3;
 		double distance3 = Math.sqrt(number);
-		if (distance <= 100) {
-			JOptionPane.showMessageDialog(null, "A bayleef just starved!");
+		if (distance3 <= 10) {
+			JOptionPane.showMessageDialog(null, "Bayleef goes nom nom num num.");
+			System.exit(0);
 		}
-
+		if (distance3 > 100) {
+			setBackgroundColor(Color.WHITE);
+		}
 		// 11. If more than 20 seconds have elapsed, tell them the turtle died of
 		// hunger!
-
+		if (getTimeElapsed() > 20) {
+			JOptionPane.showMessageDialog(null, "Bayleef just starved");
+			System.exit(0);
+		}
 		// 12. If the Tortoise crosses it's own path, tell them they failed and move
 		// them back to the beginning
+		if (wasHereBefore(tortoiseLocationX, tortoiseLocationY) == true) {
+			JOptionPane.showMessageDialog(null, "You fell off a cliff and died");
+			Point i = getFirstLocation();
+			double x11 = i.getX();
+			double y11 = i.getY();
+			Tortoise.setX((int) x11);
+			Tortoise.setY((int) y11);
+		}
 
 	}
 
