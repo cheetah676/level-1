@@ -1,3 +1,10 @@
+Car car1=new Car();
+Car car2=new Car();
+Car car3=new Car();
+Car car4=new Car();
+Car car5=new Car();
+Car car6=new Car();
+Car car7=new Car();
 int frogX=200;
 int frogY=380;
 void setup(){
@@ -7,19 +14,45 @@ void setup(){
   float carX=random(400);
   float carY=random(400);
   float carSize=random(100);
-  int carSpeed=5;
+  float carSpeed=random(100);
 
 void display() {
-      fill(0,255,0);
+      fill(255,100,100);
       rect(carX, carY, carSize, 50);
 }
-display();
-} 
+void carMoveLeft(){
+  carX+=carSpeed;
+  if (carX>=width){
+    carX=0;
+  }
+}
+void carMoveRight(){
+  carX-=carSpeed;
+  if (carX<=0){
+   carX=400; 
+  }
+}
+  }
+
 void draw(){
   background(0, 0, 255);
-  fill(20, 255, 10);
+car1.display();
+car2.display();
+car3.display();
+car4.display();
+car5.display();
+car6.display();
+car7.display();
+fill(20, 255, 10);
   stroke(0, 0, 0);
 ellipse(frogX, frogY, 20, 20);
+car1.carMoveLeft();
+car2.carMoveRight();
+car3.carMoveLeft();
+car4.carMoveRight();
+car5.carMoveLeft();
+car6.carMoveRight();
+car7.carMoveLeft();
 if (frogX==0){
   frogX+=20;
 }
@@ -58,3 +91,4 @@ void keyPressed()
             }
       }
 }
+  
